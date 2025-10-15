@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+}
+
+/* --HEADER STYLING-- */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 50px;
+    width: 85vw;
+
+    margin-bottom: 100px;
+}
+
+.main-header h1 a {
+    color: white;
+
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.main-header p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* --CART ITEMS STYLING-- */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2 {
+    margin-bottom: 30px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    width: 85vw;
+}
+
+.cart-items {
+    width: 60%;
+}
+
+.empty-message {
+    color: rgb(50, 50, 50);
+    
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.cart-items div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(50, 50, 50);
+
+    border-radius: 25px;
+}
+
+.game img {
+    height: 280px;
+    width: 210px;
+
+    margin-bottom: 20px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.game h5 {
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+.platform-selection p {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.platform-selection span {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.platform-selection button {
+    background-color: red;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    height: 50px;
+    width: 75px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.platform-selection button:hover {
+    font-size: 16px;
+
+    transition-duration: 0.2s;
+}
+
+/* --BILL STYLING-- */
+
+.bill {
+    width: 40%;
+}
+
+.bill h3 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.bill span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.bill span p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bill button {
+    background-color: white;
+
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.bill button:hover {
+    background-image: linear-gradient(315deg, #e852fc 10%, #f7356f 100%);
+    color: white;
+}
