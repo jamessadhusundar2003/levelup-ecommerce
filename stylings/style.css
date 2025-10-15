@@ -1,1 +1,242 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: black;
+}
+
+/* --NAVBAR STYLING-- */
+
+.main-header {
+    margin-bottom: 100px;
+}
+
+.main-header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+
+    height: 50px;
+    width: 95vw;
+}
+
+.main-header nav h1 {
+    font-size: 25px;
+}
+
+.main-header nav span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+}
+
+.main-header nav span input {
+    font-size: 15px;
+    
+    height: 40px;
+    width: 500px;
+
+    padding: 5px 10px;
+
+    border: none;
+    outline: none;
+}
+
+.main-header nav span button {
+    background-image: linear-gradient(315deg, #e852fc 10%, #f7356f 100%);
+    color: white;
+    
+    font-size: 15px;
+    font-weight: bold;
+
+    height: 100%;
+    width: 75px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.main-header nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(200, 200, 200);
+
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    height: 100%;
+    width: 75px;
+}
+
+.main-header nav a:hover {
+    color: white;
+
+    font-size: 16px;
+
+    transition-duration: 0.2s;
+}
+
+/* --IMAGE SLIDER STYLING-- */
+
+.image-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 100px;
+}
+
+.image-slider span {
+    position: relative;
+}
+
+.image-slider span img {
+    height: 400px;
+    width: 800px;
+
+    border-radius: 20px;
+
+    animation-name: boxShadow;
+    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+}
+
+/* --COVER PHOTO BOXSHADOW ANIMATION-- */
+
+@keyframes boxShadow {
+    0%, 25%, 65%, 100% {
+        box-shadow: 0px 0px 100px 20px rgba(244, 3, 164, 0.862);
+    }
+
+    5%, 20%, 30%, 55%, 75%, 90% {
+        box-shadow: 0px 0px 100px 20px rgba(244, 3, 3, 0.862);
+    }
+
+    10%, 45%, 80% {
+        box-shadow: 0px 0px 100px 20px rgba(208, 3, 244, 0.862);
+    }
+}
+
+.image-slider span a {
+    background-color: black;
+    color: white;
+
+    padding: 20px;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-radius: 20px;
+
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.image-slider span a:hover {
+    background-image: linear-gradient(315deg, #e852fc 10%, #f7356f 100%);
+    color: white;
+}
+
+/* --GAME CONTAINER STYLING-- */
+
+.mobile-games-container span h2, .GTA-games-container span h2, .special-offer-games-container h2 {
+    color: white;
+
+    margin-bottom: 25px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 90vw;
+
+    margin-bottom: 100px;
+}
+
+.game-container div {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(200, 200, 200);
+
+    border-radius: 25px;
+}
+
+.game-container div:hover {
+    background-color: rgb(248, 247, 247);
+
+    transition-duration: 0.2s;
+}
+
+.game-container div img {
+    height: 280px;
+    width: 210px;
+
+    margin-bottom: 20px;
+
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.game-container div span {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.game-container div span h5 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.game-container div span p {
+    font-size: 15px;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+.game-container div span button {
+    background-color: black;
+    color: rgb(200, 200, 200);
+
+    font-weight: bold;
+
+    height: 50px;
+    width: 100px;
+
+    border: none;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.game-container div span button:hover {
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    font-size: 14px;
+
+    transition-duration: 0.2s;
+}
